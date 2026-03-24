@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import {
-  View, Text, StyleSheet, TouchableOpacity, SafeAreaView, Alert,
+  View, Text, StyleSheet, TouchableOpacity, Alert,
   ActivityIndicator,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCurrentProfile, signOut, Profile } from '../../lib/supabase';
 
 export default function DispatchProfileScreen() {

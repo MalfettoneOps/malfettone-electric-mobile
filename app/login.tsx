@@ -11,9 +11,11 @@ import {
   Alert,
   ScrollView,
 } from 'react-native';
-import { signIn } from '../lib/supabase';
+import { signIn, getCurrentProfile } from '../lib/supabase';
+import { useRouter } from 'expo-router';
 
 export default function LoginScreen() {
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -30,7 +32,12 @@ export default function LoginScreen() {
 
     try {
       await signIn(email, password);
-      // Routing is handled by _layout.tsx onAuthStateChange listener
+      const profile = await getCurrentProfile();
+      if (profile?.is_admin) {
+        router.replace('/dispatch/today');
+      } else {
+        router.replace('/portal/jobs');
+      }
     } catch (err: any) {
       const message =
         err?.message || 'Sign in failed. Please check your credentials.';

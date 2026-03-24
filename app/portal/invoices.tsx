@@ -1,8 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import {
   View, Text, FlatList, TouchableOpacity, StyleSheet,
-  ActivityIndicator, RefreshControl, SafeAreaView, Linking,
+  ActivityIndicator, RefreshControl, Linking,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { supabase, Job, getCurrentProfile } from '../../lib/supabase';
 
 export default function CustomerInvoicesScreen() {
