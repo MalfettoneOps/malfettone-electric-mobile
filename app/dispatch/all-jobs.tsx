@@ -97,7 +97,7 @@ export default function DispatchAllJobsScreen() {
         <TextInput
           style={styles.searchInput}
           placeholder="Search jobs or customers..."
-          placeholderTextColor="rgba(255,255,255,0.3)"
+          placeholderTextColor="#9CA3AF"
           value={search}
           onChangeText={setSearch}
           clearButtonMode="while-editing"
@@ -143,41 +143,43 @@ export default function DispatchAllJobsScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#0a0f1a' },
-  centered: { flex: 1, backgroundColor: '#0a0f1a', justifyContent: 'center', alignItems: 'center' },
+  container: { flex: 1, backgroundColor: '#F5F6F8' },
+  centered: { flex: 1, backgroundColor: '#F5F6F8', justifyContent: 'center', alignItems: 'center' },
   header: {
     flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',
     paddingHorizontal: 20, paddingTop: 16, paddingBottom: 8,
+    backgroundColor: '#FFFFFF', borderBottomWidth: 1, borderBottomColor: '#E5E7EB',
   },
-  heading: { color: '#fff', fontSize: 22, fontWeight: '700' },
-  count: { color: 'rgba(255,255,255,0.4)', fontSize: 14 },
-  searchContainer: { paddingHorizontal: 16, marginBottom: 8 },
+  heading: { color: '#111827', fontSize: 22, fontWeight: '700' },
+  count: { color: '#6B7280', fontSize: 14 },
+  searchContainer: { paddingHorizontal: 16, marginBottom: 8, paddingTop: 10, backgroundColor: '#FFFFFF' },
   searchInput: {
-    backgroundColor: '#0d1b2e', borderRadius: 10, paddingHorizontal: 14, paddingVertical: 11,
-    color: '#fff', fontSize: 14, borderWidth: 1, borderColor: 'rgba(255,255,255,0.08)',
+    backgroundColor: '#F3F4F6', borderRadius: 10, paddingHorizontal: 14, paddingVertical: 11,
+    color: '#111827', fontSize: 14, borderWidth: 1, borderColor: '#E5E7EB',
   },
-  chipScroll: { maxHeight: 44 },
-  chipList: { paddingHorizontal: 16, gap: 8, paddingBottom: 4 },
+  chipScroll: { maxHeight: 44, backgroundColor: '#FFFFFF', borderBottomWidth: 1, borderBottomColor: '#E5E7EB' },
+  chipList: { paddingHorizontal: 16, gap: 8, paddingBottom: 8, paddingTop: 4 },
   chip: {
     paddingHorizontal: 14, paddingVertical: 7, borderRadius: 20,
-    backgroundColor: 'rgba(255,255,255,0.05)', borderWidth: 1, borderColor: 'rgba(255,255,255,0.1)',
+    backgroundColor: '#F3F4F6', borderWidth: 1, borderColor: '#D1D5DB',
   },
-  chipActive: { backgroundColor: 'rgba(124,199,63,0.15)', borderColor: '#7CC73F55' },
-  chipText: { color: 'rgba(255,255,255,0.5)', fontSize: 13, fontWeight: '500' },
+  chipActive: { backgroundColor: 'rgba(124,199,63,0.12)', borderColor: '#7CC73F' },
+  chipText: { color: '#6B7280', fontSize: 13, fontWeight: '500' },
   chipTextActive: { color: '#7CC73F', fontWeight: '600' },
   list: { padding: 16, paddingBottom: 100 },
   card: {
-    backgroundColor: '#0d1b2e', borderRadius: 12, padding: 14, marginBottom: 10,
-    borderWidth: 1, borderColor: 'rgba(255,255,255,0.06)',
+    backgroundColor: '#FFFFFF', borderRadius: 12, padding: 14, marginBottom: 10,
+    borderWidth: 1, borderColor: '#E5E7EB',
+    shadowColor: '#000', shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.05, shadowRadius: 3, elevation: 1,
   },
   cardRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12 },
-  cardTitle: { color: '#fff', fontSize: 14, fontWeight: '600', marginBottom: 2 },
-  cardCustomer: { color: 'rgba(255,255,255,0.5)', fontSize: 12, marginBottom: 2 },
-  cardMeta: { color: 'rgba(255,255,255,0.35)', fontSize: 11 },
+  cardTitle: { color: '#111827', fontSize: 14, fontWeight: '600', marginBottom: 2 },
+  cardCustomer: { color: '#6B7280', fontSize: 12, marginBottom: 2 },
+  cardMeta: { color: '#9CA3AF', fontSize: 11 },
   badge: { borderRadius: 6, paddingHorizontal: 8, paddingVertical: 3, borderWidth: 1 },
   badgeText: { fontSize: 11, fontWeight: '600' },
   empty: { alignItems: 'center', paddingTop: 60 },
   emptyEmoji: { fontSize: 36, marginBottom: 12 },
-  emptyTitle: { color: '#fff', fontSize: 16, fontWeight: '600', marginBottom: 6 },
-  emptyText: { color: 'rgba(255,255,255,0.4)', fontSize: 13 },
+  emptyTitle: { color: '#111827', fontSize: 16, fontWeight: '600', marginBottom: 6 },
+  emptyText: { color: '#6B7280', fontSize: 13 },
 });
