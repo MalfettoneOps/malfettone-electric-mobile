@@ -162,7 +162,7 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0A1628',
+    backgroundColor: '#F5F6F8',
   },
   content: {
     paddingBottom: 40,
@@ -177,14 +177,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 24,
+    backgroundColor: '#FFFFFF',
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.1)',
+    borderBottomColor: '#E5E7EB',
   },
   avatarContainer: {
     width: 80,
     height: 80,
     borderRadius: 40,
-    backgroundColor: 'rgba(124, 199, 63, 0.2)',
+    backgroundColor: 'rgba(124, 199, 63, 0.12)',
     borderWidth: 2,
     borderColor: '#7CC73F',
     justifyContent: 'center',
@@ -200,12 +201,12 @@ const styles = StyleSheet.create({
   profileName: {
     fontSize: 20,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: '#111827',
     marginBottom: 4,
   },
   profileEmail: {
     fontSize: 13,
-    color: 'rgba(255, 255, 255, 0.6)',
+    color: '#6B7280',
     marginBottom: 4,
   },
   profileRole: {
@@ -216,19 +217,20 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   divider: {
-    height: 1,
-    backgroundColor: 'rgba(255, 255, 255, 0.05)',
-    marginVertical: 8,
+    height: 8,
+    backgroundColor: '#F5F6F8',
+    marginVertical: 0,
   },
   section: {
-    paddingVertical: 8,
+    paddingVertical: 4,
+    backgroundColor: '#FFFFFF',
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.05)',
+    borderBottomColor: '#E5E7EB',
   },
   sectionTitle: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '700',
-    color: 'rgba(255, 255, 255, 0.5)',
+    color: '#9CA3AF',
     marginHorizontal: 16,
     marginVertical: 12,
     textTransform: 'uppercase',
@@ -241,7 +243,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 14,
     borderTopWidth: 1,
-    borderTopColor: 'rgba(255, 255, 255, 0.05)',
+    borderTopColor: '#F3F4F6',
   },
   settingLeft: {
     flexDirection: 'row',
@@ -260,16 +262,16 @@ const styles = StyleSheet.create({
   settingLabel: {
     fontSize: 15,
     fontWeight: '500',
-    color: '#FFFFFF',
+    color: '#111827',
     marginBottom: 2,
   },
   settingDescription: {
     fontSize: 12,
-    color: 'rgba(255, 255, 255, 0.4)',
+    color: '#9CA3AF',
   },
   settingArrow: {
     fontSize: 16,
-    color: 'rgba(255, 255, 255, 0.2)',
+    color: '#D1D5DB',
     marginLeft: 8,
   },
   signOutButton: {
@@ -279,9 +281,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     marginTop: 24,
     paddingVertical: 14,
-    backgroundColor: 'rgba(239, 68, 68, 0.2)',
+    backgroundColor: '#FEF2F2',
     borderWidth: 1,
-    borderColor: 'rgba(239, 68, 68, 0.3)',
+    borderColor: '#FECACA',
     borderRadius: 8,
   },
   buttonDisabled: {
@@ -294,7 +296,7 @@ const styles = StyleSheet.create({
   signOutText: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#FCA5A5',
+    color: '#EF4444',
   },
   footer: {
     marginTop: 40,
@@ -303,12 +305,12 @@ const styles = StyleSheet.create({
   },
   footerText: {
     fontSize: 12,
-    color: 'rgba(255, 255, 255, 0.5)',
+    color: '#9CA3AF',
     fontWeight: '500',
     marginBottom: 4,
   },
   footerSubtext: {
     fontSize: 11,
-    color: 'rgba(255, 255, 255, 0.3)',
+    color: '#D1D5DB',
   },
 });

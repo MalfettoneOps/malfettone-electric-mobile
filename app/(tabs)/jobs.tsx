@@ -242,7 +242,7 @@ export default function JobsScreen() {
         <TextInput
           style={styles.searchInput}
           placeholder="Search jobs or customers..."
-          placeholderTextColor="rgba(255, 255, 255, 0.3)"
+          placeholderTextColor="#9CA3AF"
           value={searchQuery}
           onChangeText={setSearchQuery}
           autoCapitalize="none"
@@ -322,7 +322,7 @@ export default function JobsScreen() {
             refreshing={isRefreshing}
             onRefresh={handleRefresh}
             tintColor="#7CC73F"
-            progressBackgroundColor="rgba(255, 255, 255, 0.1)"
+            progressBackgroundColor="#FFFFFF"
           />
         }
         ListEmptyComponent={renderEmpty}
@@ -334,16 +334,16 @@ export default function JobsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0A1628',
+    backgroundColor: '#F5F6F8',
   },
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 12,
     paddingVertical: 12,
-    backgroundColor: 'rgba(255, 255, 255, 0.03)',
+    backgroundColor: '#FFFFFF',
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.1)',
+    borderBottomColor: '#E5E7EB',
   },
   searchIcon: {
     fontSize: 16,
@@ -351,18 +351,18 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
-    backgroundColor: 'rgba(255, 255, 255, 0.06)',
+    backgroundColor: '#F3F4F6',
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
+    borderColor: '#E5E7EB',
     borderRadius: 8,
     paddingHorizontal: 12,
     paddingVertical: 10,
-    color: '#FFFFFF',
+    color: '#111827',
     fontSize: 14,
   },
   clearIcon: {
     fontSize: 16,
-    color: 'rgba(255, 255, 255, 0.4)',
+    color: '#9CA3AF',
     marginLeft: 8,
   },
   filterContainer: {
@@ -370,8 +370,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 12,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.1)',
-    backgroundColor: 'rgba(255, 255, 255, 0.02)',
+    borderBottomColor: '#E5E7EB',
+    backgroundColor: '#FFFFFF',
   },
   filterTab: {
     paddingHorizontal: 14,
@@ -380,7 +380,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
     backgroundColor: 'transparent',
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
+    borderColor: '#D1D5DB',
   },
   filterTabActive: {
     backgroundColor: '#7CC73F',
@@ -389,10 +389,10 @@ const styles = StyleSheet.create({
   filterTabText: {
     fontSize: 12,
     fontWeight: '600',
-    color: 'rgba(255, 255, 255, 0.6)',
+    color: '#6B7280',
   },
   filterTabTextActive: {
-    color: '#0A1628',
+    color: '#FFFFFF',
   },
   listContent: {
     paddingHorizontal: 12,
@@ -408,9 +408,9 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   sectionTitle: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: '700',
-    color: 'rgba(255, 255, 255, 0.7)',
+    color: '#6B7280',
     textTransform: 'uppercase',
     letterSpacing: 0.5,
   },
@@ -418,20 +418,25 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '600',
     color: '#7CC73F',
-    backgroundColor: 'rgba(124, 199, 63, 0.2)',
+    backgroundColor: 'rgba(124, 199, 63, 0.15)',
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 4,
   },
   jobCard: {
-    backgroundColor: 'rgba(255, 255, 255, 0.06)',
+    backgroundColor: '#FFFFFF',
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
+    borderColor: '#E5E7EB',
     borderRadius: 12,
     marginBottom: 10,
     flexDirection: 'row',
     alignItems: 'center',
     overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 3,
+    elevation: 1,
   },
   cardContent: {
     flex: 1,
@@ -447,7 +452,7 @@ const styles = StyleSheet.create({
   jobTitle: {
     fontSize: 15,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: '#111827',
     flex: 1,
     marginRight: 8,
   },
@@ -459,22 +464,22 @@ const styles = StyleSheet.create({
   statusBadgeText: {
     fontSize: 10,
     fontWeight: '600',
-    color: '#0A1628',
+    color: '#FFFFFF',
   },
   customerName: {
     fontSize: 13,
-    color: '#FFFFFF',
+    color: '#374151',
     marginBottom: 3,
     fontWeight: '500',
   },
   address: {
     fontSize: 11,
-    color: 'rgba(255, 255, 255, 0.6)',
+    color: '#6B7280',
     marginBottom: 4,
   },
   date: {
     fontSize: 11,
-    color: 'rgba(255, 255, 255, 0.5)',
+    color: '#9CA3AF',
     fontWeight: '500',
   },
   cardArrow: {
@@ -483,7 +488,7 @@ const styles = StyleSheet.create({
   },
   arrow: {
     fontSize: 16,
-    color: 'rgba(255, 255, 255, 0.2)',
+    color: '#D1D5DB',
   },
   emptyContainer: {
     flex: 1,
@@ -498,13 +503,13 @@ const styles = StyleSheet.create({
   emptyText: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#FFFFFF',
+    color: '#111827',
     marginBottom: 4,
     textAlign: 'center',
   },
   emptySubtext: {
     fontSize: 13,
-    color: 'rgba(255, 255, 255, 0.5)',
+    color: '#6B7280',
     textAlign: 'center',
   },
   loadingContainer: {
